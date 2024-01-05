@@ -41,8 +41,8 @@ public class BarrierScrip : MonoBehaviour
         }
     }
 
-    IEnumerator DestroyBar() {
-        coAlreadystar = true;
+    IEnumerator DestroyBar() {           //This function sets a bunch of sequential actions to occur, including the barrier to break with the animation, setting the 
+        coAlreadystar = true;            // sword to be able to be picked up, and setting the enemy to attack the player
         EpanAnim.SetBool("IfClick", true);
         yield return new WaitForSeconds (0.5f);
         Epanel.SetActive(false);
